@@ -1,0 +1,14 @@
+task confused{
+	doFirst{
+		println "I'm from dofirst 1"
+	}
+	doFirst{
+		println "I'm from dofirst 2"
+	}
+	doLast{
+		println "I'm from dolast 1"
+	}
+	doLast{
+		println "I'm from dolast 2"
+	}
+}

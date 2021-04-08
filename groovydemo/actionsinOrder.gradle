@@ -1,0 +1,6 @@
+task actionsinOrder {
+	doLast{
+		println "First task"
+	  }	
+	 
+}

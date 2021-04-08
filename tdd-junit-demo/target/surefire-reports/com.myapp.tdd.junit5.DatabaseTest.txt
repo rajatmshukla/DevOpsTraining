@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.myapp.tdd.junit5.DatabaseTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.086 sec <<< FAILURE! - in com.myapp.tdd.junit5.DatabaseTest
+testQueriedData()  Time elapsed: 0.085 sec  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.myapp.tdd.junit5.Flight.addPassenger(com.myapp.tdd.junit5.Passenger)" because "flight" is null
+	at com.myapp.tdd.junit5.DatabaseTest.testQueriedData(DatabaseTest.java:50)
+

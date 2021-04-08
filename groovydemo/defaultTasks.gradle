@@ -1,0 +1,11 @@
+defaultTasks 'clean','runTest'
+task clean{
+	doLast{
+		println 'cleaning'
+	}
+}
+task runTest{
+	doLast{
+		println 'Running Tests'
+	}
+}

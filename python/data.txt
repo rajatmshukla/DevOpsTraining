@@ -1,0 +1,4 @@
+1,"Shoe","Puma",2000,40
+2,"Sock","Nike",500,30
+3,"Bag","Addidas",2300,90
+4,"Bottle","Milton",280,230

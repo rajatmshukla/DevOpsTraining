@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: new-nginx
+  labels:
+    app: new-nginx
+spec:
+  selector:
+    matchLabels:
+      app: new-nginx
+  template:
+    metadata:
+      labels:
+        app: new-nginx
+    spec:
+      containers:
+      - name: new-nginx
+        image: nginx:alpine
+        ports:
+        - containerPort: 90
+        resources: {}

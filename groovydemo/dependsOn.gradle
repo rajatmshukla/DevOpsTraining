@@ -1,0 +1,35 @@
+
+//task simple{
+//	doLast{
+//		println 'simple task'
+//	}
+//}
+//task simpleWithDependsOn (dependsOn: 'simple'){
+//	doLast{
+//		println 'Simple with depends on'
+//	}
+//}
+
+task clean{
+	doLast{
+		println 'cleaning'
+	}
+}
+task runTest{
+	doLast{
+		println 'Running Tests'
+	}
+}
+
+
+task buildApplication(dependsOn: 'clean') {
+	doLast{
+		println 'building application'
+	}
+}
+task deploy (dependsOn: ['runTest','buildApplication'] )
+	doLast{
+		println 'deploying'
+	}
+
+
